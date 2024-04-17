@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best online Food service in India.</title>
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    }
+/* Navigation bar */
+#navbar{
+    display:flex;
+    align-items: center;
+    position: relative;
+}
+/* image and logo */
+#logo{
+    margin: 6px 17px;
+}
+/* logo style */
+#logo img{
+    max-height:21px;
+    margin:3px 5px;
+    vertical-align: baseline;
+}
+#navbar ul{
+    display: flex;
+font-family: "Baloo Bhai";
+}
+#navbar ul li{
+    list-style:none;
+    font-size : 1.3rem;
+
+}
+#navbar ul li a{
+   color: white;
+   display: block;
+   padding: 3px 22px;
+   border-radius: 20px;
+   text-decoration: none;
+
+}
+#navbar ul li a:hover{
+   color: black;
+   background-color: white;
+
+}
+#navbar::before{
+     content: "";
+     background-color: black;
+     position: absolute;
+     height: 100%;
+     width:100%;
+     z-index:-1;
+     opacity: 0.4;
+    }
+#home{
+    display:flex;
+    flex-direction: column;
+    padding:3px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+#home::before{
+     content: "";
+     background:url("bg1.jpg") no-repeat center center/cover;
+     position: absolute;
+     height: 100%;
+     width:100%;
+     z-index:-1;
+     opacity: 0.89;
+    }
+.h-primary{
+    font-size: 2.8rem;
+    padding: 12px;
+}
+#home h1{
+    color:white;
+    text-align: center;
+    font-family: "Bree serif";
+}
+#home p{
+    color:white;
+    text-align: center;
+    font-size:1.5rem;
+    font-family: "Bree serif";
+}
+</style>
+
+</head>
+<body>
+    <nav id ="navbar">
+        <div id=logo>
+            <img src="logo1.png" alt="Tigerspeed.com" >
+        </div>
+        <ul>
+            <li class="item"><a href="#">Home</a></li>
+            <li class="item"><a href="#">Services</a></li>
+            <li class="item"><a href="#">About</a></li>
+            <li class="item"><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <section id="home">
+        <h1 class="h-primary">Welcome to Tigerspeed.com </h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam minima minus quaerat
+             excepturi voluptas consectetur.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam minima minus quaerat
+            excepturi voluptas consectetur.</p>
+        <button class=btn>Order Now</button>
+    </section>
+</body>
+</html>

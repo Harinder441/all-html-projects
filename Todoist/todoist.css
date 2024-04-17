@@ -1,0 +1,99 @@
+*{
+    font-family: 'Yaldevi', sans-serif;
+    letter-spacing: 0.08rem;
+    
+}
+.align{
+    display: flex;
+    justify-content: center;
+    
+   
+}
+.align2{
+    display: flex;
+    justify-content: center;
+    
+   
+}
+.addtask{
+    width: 800px;
+}
+.head2{
+    font-size: 1rem;
+    text-align: left;
+    color:black;
+    margin-bottom: 2px;
+    font-weight: 600;
+}
+.mainh{
+    font-size: 2.3rem; 
+    text-align: center; 
+}
+.textarea1{
+    width: 100%;
+    text-align: left;
+    border:1px solid gray;
+    font-weight: 550;
+}
+.textarea1:focus{
+    outline: none;
+    background-color: rgb(214, 213, 213);
+}
+.textarea1:hover{
+    outline: none;
+    border:1px solid rgb(51, 50, 50);
+}
+.title input{
+    padding:3px 3px;
+}
+.title h1{
+    margin-bottom: 0;
+}
+.discription input{
+    height: 60px;
+    width: 100%;
+
+}
+.discription h1{
+    margin-bottom: 0;
+
+}
+.buttons{
+    margin-top: 1rem;
+}
+.button1{
+    background-color: rgb(6, 6, 216);
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border:0;
+    padding:6px 8px;
+    margin:0 2px;
+}
+.button1:hover{
+    background-color: rgb(2, 2, 94);
+}
+/* your tasks */
+.taskli{
+    font-size: 0.9rem;
+}
+.taskli thead{
+font-weight: bolder;
+}
+#table{
+    border-collapse: collapse;
+    width: 100%;
+}
+#table th,td{
+    border-bottom:1px solid gray;
+    padding: 4px 8px;
+    overflow: hidden;
+} 
+#table th{
+    border-top:1px solid gray;  
+    text-align: left;
+}
+
+.youritem{
+    width: 800px;
+}

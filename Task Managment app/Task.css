@@ -1,0 +1,362 @@
+
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+.cta{
+text-decoration: none;
+}
+.container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#hero{
+    background-image: url("img/burger.jpg");
+    background-size: cover;
+    background-position:center center;
+    position: relative;
+    z-index:1;
+}
+#hero::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top:0;
+    height: 100%;
+    width:100%;
+    background-color: black;
+    opacity: .6;
+    z-index: -1;
+}
+#hero h1{
+    display: block;
+    width: fit-content;
+    font-size: 4rem;
+    position: relative;
+    color:transparent;
+    font-weight: 1500;
+    animation: text_reveal -5s ease forwards ;
+    animation-delay:1.0s ;
+}
+#hero .hero{
+    max-width: 1000px;
+    margin:0 auto;
+    padding:0 50px;
+    justify-content: flex-start;
+}
+#hero h1:nth-child(1){
+    animation-delay:1s ;
+}
+#hero h1:nth-child(2){
+    animation-delay:2s ;
+}
+#hero h1:nth-child(3){
+    animation: text_reveal_name .5s ease forwards;
+    animation-delay:3s ;
+}
+#hero h1 span{
+    position: absolute;
+    left: 0;
+    top:0;
+    height: 100%;
+    width:0;
+    background-color: red;
+    animation: text_reveal_box 1s ease;
+    animation-delay: .5s;
+}
+#hero h1 span:nth-child(1){
+    animation-delay:0.5s ;
+}
+#hero h1 span:nth-child(2){
+    animation-delay:1.5s ;
+}
+#hero h1 span:nth-child(3){
+    animation-delay:2.5s ;
+}
+ .cta{
+    display: inline-block;
+    padding: 10px 30px;
+    font-size:2rem;
+    color:red;
+    border:2px solid red;
+    text-transform: uppercase;
+    background-color: transparent;
+    margin-top: 30px;
+    letter-spacing: .1rem;
+    transition: .3s ease ;
+    transition-property: background-color ,color;
+    font-weight: 1000;
+}
+ .cta:hover{
+color:white;
+background-color: red;
+
+}
+/* keyframes */
+@keyframes text_reveal_box {
+    50%{
+width:100% ;
+left:0;
+    }
+100%{
+    width:0 ;
+    left:100%;
+}    
+}
+@keyframes text_reveal {
+    100%{
+       color:white;
+       font-weight: 700;
+    }    
+      
+}
+@keyframes text_reveal_name {
+    100%{
+       color:red;
+    
+    }}
+/* keyframes */
+/* service-section */
+#services .services{
+flex-direction: column;
+text-align: center;
+max-width: 1500px;
+margin:0 auto;
+padding: 100px 0;
+}
+ .section-title{
+    font-size: 5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    letter-spacing: .2rem;
+    text-align: center;
+
+}
+.section-title span{
+    color: red;
+}
+#services .service-top p{
+font-size: 1.5rem;
+color: black;
+font-weight: bold;
+padding:0 15%;
+justify-content: center;
+}
+    /* service-section */
+    #services .servis-item h1{
+        text-transform: uppercase;
+        text-align: left;
+        margin-left:2px; 
+        color:white;
+        font-weight: bold;
+    }
+    #services .servis-item p{
+    font-size:1.3rem;
+    font-weight: 700;
+    padding:5% 0;
+    color:white;
+    line-height: 2.3rem;
+    text-align: left;
+}
+    #services .servis-item .icon{
+  text-align: left;
+padding:5% 0;
+position: relative;
+    }
+    #services .servis-item {
+        background-image: url("img/img-1.png");
+        padding:0 10%;
+        background-position: center;
+        margin:4% 10% ;
+        z-index: 1;
+        position: relative;
+        border-radius: 10px;
+        border:1px solid rgba(10, 10, 51,0.7);
+    
+}
+    
+   
+    #services .servis-item::after{
+        content: "";
+        background-color: rgb(10, 10, 51);
+        height: 100%;
+        width:100%;
+        top:0;
+        left:0;
+        position: absolute;
+        border-radius: 10px;
+        border:1px solid rgba(10, 10, 51,0.7);
+        opacity: .7;
+        z-index: -1;
+    }
+
+
+/* project editing */
+    #projects .projects {
+        flex-direction: column;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 100px 0;
+    }
+    #projects .sideitem{
+        padding: 30px;
+        flex-basis: 50%;
+        height: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+        color: white;
+     
+    
+}
+#projects .service-bottom {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+#projects .servis-item  {
+    display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 80%;
+	margin: 20px auto;
+	overflow: hidden;
+	border-radius: 10px;
+}
+#projects .image{
+    flex-basis: 50%;
+	height: 300px;
+	overflow: hidden;
+	position: relative;
+    z-index: -1;
+}
+#projects .image::after
+{
+content: ""; 
+position: absolute;
+z-index: 1;
+background-color: #29323c;
+opacity: .7;
+left:0;
+top: 0;
+height: 100%;
+width: 100%;
+
+}
+    #projects .sideitem h1{
+        text-align: left;
+        margin-left:2px; 
+         color:white;
+        font-weight: bold;   
+        font-size: 3rem;
+        padding: 4% 0;
+       
+    }
+   .sub{
+        text-align: left;
+        /* color:white;  */
+        font-weight: 700;   
+        font-size: 1.7rem;
+       
+
+    }
+    .topic{
+        text-align: left;
+        /* color:white;  */
+        font-weight: 500;   
+        font-size: 1.3rem;
+        line-height: 2rem;
+        padding:4% 0;
+        position: relative;   
+    }
+/* project editing */
+/* About*/
+
+#aboutme .section-title{
+    text-align: center;
+    
+}
+#aboutme .aboutme{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+#aboutme .profile img{
+    width: 300px;
+    max-height: 400px;
+}
+
+#aboutme .profile {
+    
+	margin-top: 50px;
+	position: relative;
+    z-index: 1;
+
+}
+#aboutme .profile::after{
+    content:"";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: -4rem;
+    bottom: -4rem;
+    border: 10px solid red;   
+    z-index: -1;
+    
+}
+#aboutme .infoabout{
+   max-width: 600px;
+   
+   margin:0  10%;
+}
+#aboutme .linkbt{
+    text-align: center;
+}
+/* About*/
+
+@media only screen and (min-width: 768px) {
+/* Project */
+#projects .servis-item {
+    flex-direction: row;
+}
+#projects .servis-item:nth-child(even) {
+    flex-direction: row-reverse;
+}
+#projects .servis-item {
+    height: 400px;
+    margin: 0;
+    width: 100%;
+    border-radius: 0;
+}
+#projects .service-bottom .sideitem {
+    height: 100%;
+}
+#projects .service-bottom .image {
+    height: 100%;
+}
+
+/* End Project */
+#aboutme .aboutme{
+    flex-direction: row;
+}
+
+#aboutme .section-title{
+    text-align: left;
+}
+#aboutme .linkbt{
+    text-align:left;
+}
+}

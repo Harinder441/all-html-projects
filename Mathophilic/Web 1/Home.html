@@ -1,0 +1,419 @@
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/a757a4958d.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mathophilic</title>
+    <style>
+       
+        :root{
+            --navcolor:rgb(52, 114, 61);
+            --text1:white;
+            --button:rgb(52, 114, 61);
+            --buttonb:white;
+            --navcolor1:rgb(87, 141, 95); 
+        }
+        body{
+             margin:0px;
+         }
+        /* top nav bar */
+        #Entry{
+          width: 450px;
+          border: 2px solid var(--navcolor);
+          padding: 10px;
+          border-radius: 50px;
+          background-color: var(--text1);
+        }
+        #inside input{
+         outline:none;
+         border:0px solid;
+         font-size: 1rem;
+         padding-left: 5px;
+         color: var(--navcolor);
+   
+        }
+        #inside input::placeholder{
+            color:var(--navcolor);
+        }
+        #inside i{
+            color:var(--navcolor);
+        }
+        .user{
+            border: 2px solid var(--text1);
+            border-radius: 20px;
+            padding:2px ;
+            background-color: var(--text1);
+            color:var(--navcolor);
+            margin: 0px 10px;
+        }
+        .HomeText{
+            color:var(--text1);
+        }
+        #logo img{
+              height: 60px;
+        }
+        #logo{
+            padding-left: 10px;
+            padding-right: 35px;
+        }
+        .navb{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            width: 100%;
+            background-color:var(--navcolor);
+            margin: 0px;
+            
+        }
+        .item{
+            padding: 0px 16px;
+        }
+        .icon i{
+            font-size: 1.2rem;
+        }
+        .icon{
+            padding: 0px 10px;
+            color: var(--text1);
+        }
+        #icons{
+            margin-left: 40px;
+        display: flex;
+        align-items: center;
+        }
+        /* top navbar end */
+        /* navnbar 2 start */
+        .topics{
+            background-color: var(--navcolor);
+            width:100%;
+             
+            border-top: 1px solid var(--text1);
+            padding: 10px 0px;
+            display: flex;
+            justify-content: center;
+        }
+        .item1{
+            color:var(--text1);
+            padding: 0px 20px;
+
+        }
+          /* navnbar 2 end*/
+       
+        .image1{
+            position: relative; 
+            background-image: url("img/b5.jpg"); 
+           height: 400px;
+            background-color: blue;
+            margin-top: 1px;
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+        .show{
+            display: inline-block;
+            background-color: white;
+            width: 280px;
+            position: absolute; 
+            top:40px;
+            left:20px;
+            padding-left: 10px;
+        }
+        .leftb{
+            position: absolute;
+            top:200px;
+        }
+        .rightb{
+            position: absolute;
+            top:200px;
+            right:1px;
+        }
+        .button i{
+         font-size: 2.3rem;
+         color: var(--buttonb);
+         
+        }
+        .button:hover i{
+            color: var(--button);
+            
+        }
+        /* what to learnnext */
+        .next h1{
+            margin-bottom: 0;
+            font-size: 2.4rem;
+            margin-left: 15px;
+        }
+        .next h3{
+            margin-left: 15px;
+            margin-top:9px;
+            font-size: 1.5rem;
+            margin-bottom: 0;
+        }
+        .items{
+            width:250;
+            padding: 10px;
+            
+        }
+        .image{
+            min-height:150px;
+           
+        }
+        .image img{
+            width:250px;
+            max-height:150px;
+
+        }
+        .items h4{
+            margin:3px 0;
+        }
+        #about{
+            margin:3px 0;
+            color: rgb(73, 72, 72);
+        }
+        #rate{
+            margin:5px 0; 
+        }
+        #num{
+            color: rgb(201, 78, 34);
+            font-weight: 600;
+            font-size: 1rem;
+        }
+        #star{
+            color: rgb(201, 78, 34);
+        }
+        #total{
+            color: rgb(73, 72, 72);
+        }
+        #price{
+            margin:5px 0;
+            font-weight: 550;
+        }
+        #price span{
+            color: rgb(73, 72, 72);
+            text-decoration: line-through; 
+        }
+       .scroll{
+           display: flex;
+           flex-direction: row;
+           width: 100%;
+           overflow: hidden;
+       }
+       /* scrolling-Start*/
+       .button1 i{
+         font-size: 2.3rem;
+         color: var(--button);
+         
+        }
+        .button1:hover i{
+            color: var(--navcolor1);
+            
+        }
+        .next{
+            position: relative;
+        }
+        .button1{
+            position: absolute;
+        }
+        .leftb1
+        {
+        bottom: 150px;
+        left:1px;    
+    }
+    .rightb1
+        {
+        bottom: 150px;
+        right:1px;    
+    }
+    </style>
+    
+</head>
+<body> 
+      <!-- top navbar Start -->
+    <div class=navb>
+           
+           <div id=logo> <img src='img/myicon.png' ></div>
+           <div class=item><p class=HomeText>Categories</p></div>
+           <div id=Entry class=item>
+               <div id=inside >
+                <i class="fas fa-search"></i>
+                   <input type="text" placeholder="search for anything">
+               </div>
+           </div>
+           <div class=item><p class=HomeText>Courses</p></div>
+           <div class=item><p class=HomeText>Teach on Mathophilic</p></div>
+           <div class=item><p class=HomeText>My learning</p></div>
+           <div id=icons>
+           <div class="icon" class=item><i class="far fa-heart"></i></div>       
+           <div class="icon" class=item><i class="fas fa-shopping-cart"></i></div>       
+           <div class="icon" class=item><i class="far fa-bell"></i></div>   
+           <div class="user" class=item>HS</div>   
+           </div>    
+    </div>
+    <!-- top navbar End -->
+    <!-- /* navnbar 2 start */ -->
+    <div class="topics">
+        <div class="item1">Group Theory</div>
+        <div class="item1">Calculus</div>
+        <div class="item1">Ring Theory</div>
+        <div class="item1">Analysis</div>
+        <div class="item1">Number Theory</div>
+        <div class="item1">Group Theory</div>
+        <div class="item1">Group Theory</div>
+    </div>
+    <!-- /* navnbar 2 End*/ -->
+    <div class="offers">
+        <div class="image1" >
+            <div class="show">
+                <h3>Group Theory Course -1000 only</h3>
+                <p>lifetime subscription</p>
+            </div> 
+         <div class="leftb button" onclick="back1()">
+            <i class="fas fa-arrow-circle-left"></i>
+         </div>
+         <div class="rightb button" onclick="forward()"> 
+            <i class="fas fa-arrow-circle-right"></i>
+         </div>
+        </div>
+        
+    </div>
+   <div class="next">
+      <h1>What to learn next</h1>
+      <h3>Recommended for You</h3>
+      <div class="leftb1 button1" onclick="back2()">
+        <i class="fas fa-arrow-circle-left"></i>
+     </div>
+     <div class="rightb1 button1" onclick="forward2()"> 
+        <i class="fas fa-arrow-circle-right"></i>
+     </div>
+      <div class="scroll">
+          <div class="items" id="itm1">
+              <div class="image">
+                  <img src="img/next1.jpg">
+              </div>
+              <h4>Master yourself in Calculus for Bsc Students</h4>
+              <p id="about">Unacademy Expert-Harinder singh</p>
+               <p id="rate"><span id="num">4.7</span ><span id="star"> &starf;&starf;&starf;&starf;&star;</span><span id="total"> (25634)</span></p>
+              <p id="price">&#x20B9;525 <span>&#x20B9;3499</span></p>
+          </div>
+          <div class="items" id="itm2">
+            <div class="image">
+                <img src="img/next2.jpeg">
+            </div>
+            <h4>Master yourself in Calculus for Bsc Students</h4>
+            <p id="about">Unacademy Expert-Harinder singh</p>
+             <p id="rate"><span id="num">4.7</span ><span id="star"> &starf;&starf;&starf;&starf;&star;</span><span id="total"> (25634)</span></p>
+            <p id="price">&#x20B9;525 <span>&#x20B9;3499</span></p>
+        </div>
+        <div class="items" id="itm3">
+            <div class="image">
+                <img src="img/next3.jpg">
+            </div>
+            <h4>Master yourself in Calculus for Bsc Students</h4>
+            <p id="about">Unacademy Expert-Harinder singh</p>
+             <p id="rate"><span id="num">4.7</span ><span id="star"> &starf;&starf;&starf;&starf;&star;</span><span id="total"> (25634)</span></p>
+            <p id="price">&#x20B9;525 <span>&#x20B9;3499</span></p>
+        </div>
+        <div class="items" id="itm4">
+            <div class="image">
+                <img src="img/next4.jpg">
+            </div>
+            <h4>Master yourself in Calculus for Bsc Students</h4>
+            <p id="about">Unacademy Expert-Harinder singh</p>
+             <p id="rate"><span id="num">4.7</span ><span id="star"> &starf;&starf;&starf;&starf;&star;</span><span id="total"> (25634)</span></p>
+            <p id="price">&#x20B9;525 <span>&#x20B9;3499</span></p>
+        </div>
+        <div class="items" id="itm5">
+            <div class="image">
+                <img src="img/next3.jpg">
+            </div>
+            <h4>Master yourself in Calculus for Bsc Students</h4>
+            <p id="about">Unacademy Expert-Harinder singh</p>
+             <p id="rate"><span id="num">4.7</span ><span id="star"> &starf;&starf;&starf;&starf;&star;</span><span id="total"> (25634)</span></p>
+            <p id="price">&#x20B9;525 <span>&#x20B9;3499</span></p>
+        </div>
+        <div class="items" id="itm6">
+            <div class="image">
+                <img src="img/next4.jpg">
+            </div>
+            <h4>Master yourself in Calculus for Bsc Students</h4>
+            <p id="about">Unacademy Expert-Harinder singh</p>
+             <p id="rate"><span id="num">4.7</span ><span id="star"> &starf;&starf;&starf;&starf;&star;</span><span id="total"> (25634)</span></p>
+            <p id="price">&#x20B9;525 <span>&#x20B9;3499</span></p>
+        </div><div class="items" id="itm7">
+            <div class="image">
+                <img src="img/next3.jpg">
+            </div>
+            <h4>Master yourself in Calculus for Bsc Students</h4>
+            <p id="about">Unacademy Expert-Harinder singh</p>
+             <p id="rate"><span id="num">4.7</span ><span id="star"> &starf;&starf;&starf;&starf;&star;</span><span id="total"> (25634)</span></p>
+            <p id="price">&#x20B9;525 <span>&#x20B9;3499</span></p>
+        </div>
+        <div class="items" id="itm8">
+            <div class="image">
+                <img src="img/next4.jpg">
+            </div>
+            <h4>Master yourself in Calculus for Bsc Students</h4>
+            <p id="about">Unacademy Expert-Harinder singh</p>
+             <p id="rate"><span id="num">4.7</span ><span id="star"> &starf;&starf;&starf;&starf;&star;</span><span id="total"> (25634)</span></p>
+            <p id="price">&#x20B9;525 <span>&#x20B9;3499</span></p>
+        </div>
+
+      </div> 
+   </div>
+</body>
+
+</html>  
+<script>
+    var x=0;
+    const l=["url('img/b4.jpeg')","url('img/b5.jpg')","url('img/b6.jpg')"];
+    const t=['<h3>Group Theory Course -1000 only</h3><p>lifetime subscription</p>','<h3>Ring Theory Course -500 only</h3><p>lifetime subscription</p>','<h3>Analaysis -3000 only</h3><p>lifetime subscription</p>'];
+    function back1(){
+    if(x==0)
+    {x=3;}
+    x=x-1;
+    document.getElementsByClassName("image1")[0].style.backgroundImage = l[x];
+    document.getElementsByClassName("show")[0].innerHTML = t[x];
+        
+    }
+    function forward(){
+    if(x==2)
+    {x=-1;}
+    x=x+1;
+    document.getElementsByClassName("image1")[0].style.backgroundImage = l[x];
+     document.getElementsByClassName("show")[0].innerHTML = t[x];   
+    }
+    
+    var y=0;
+    var tItems=3;
+    update();
+    const itemsL=["itm1","itm2","itm3","itm4","itm5","itm6","itm7","itm8"]
+    function back2(){
+        if(y>0){
+    document.getElementById(itemsL[y-1]).style.display="block";   
+    y=y-1;    
+}
+update();
+    }
+    function forward2(){
+    if(y<tItems){
+    document.getElementById(itemsL[y]).style.display="none";   
+    y=y+1;    
+}
+update();
+    }
+    function update(){
+        if(y==0)
+        {
+         document.getElementsByClassName("leftb1")[0].style.visibility="hidden";   
+         document.getElementsByClassName("rightb1")[0].style.visibility="visible"; 
+        }
+        else if(y>0 && y<tItems)
+        {
+            document.getElementsByClassName("leftb1")[0].style.visibility="visible";   
+         document.getElementsByClassName("rightb1")[0].style.visibility="visible";
+        }
+        else if(y==tItems)
+        {
+            document.getElementsByClassName("leftb1")[0].style.visibility="visible";   
+         document.getElementsByClassName("rightb1")[0].style.visibility="hidden";   
+        }
+    }
+   </script>

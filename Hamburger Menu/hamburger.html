@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BarBarBurger.com</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/a757a4958d.js" crossorigin="anonymous"></script>
+<style>
+.maincontainer{
+margin: 0;
+height: 100vh;
+width: 100vw;
+/* Location of the image */
+background-image: url(img\ /burger.jpg);
+
+/* Background image is centered vertically and horizontally at all times */
+background-position: center  center;
+
+/* Background image doesn't tile */
+background-repeat: no-repeat;
+
+/* Background image is fixed in the viewport so that it doesn't move when
+the content's height is greater than the image's height */
+/* background-attachment: fixed; */
+
+/* This is what makes the background image rescale based
+on the container's size */
+background-size: cover;
+
+/* Set a background color that will be displayed
+while the background image is loading */
+background-color: #464646;
+display: flex;
+justify-content: center;
+align-items: center;
+z-index: 0;
+}
+.container1{
+  text-align: center;
+
+}
+.container1 p{
+  text-align: center;
+  color:white;
+  font-size: 1.2rem;
+  font-family: "Arial"; 
+}
+.container1 h1{
+  font-size: 4.0rem;
+  color:rgb(158, 29, 29);
+  font-family: "Dancing Script";
+ }
+.link a{
+    color:rgb(158, 29, 29);
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+.icons{
+  position:absolute;
+   top: 0.7rem;
+   left:0.8rem;
+   z-index: 2;
+}
+.icons button{
+background: none;
+}
+.icons i
+{
+    color:white;
+    font-size: 30px;
+   
+}
+.menu{
+ margin: 0;
+height: 100vh;
+width: 100vw;
+ /* background-image: url(img\ /burger.jpg); */
+
+/* Background image is centered vertically and horizontally at all times */
+/* background-position: center  center; */
+
+/* Background image doesn't tile */
+/* background-repeat: no-repeat;
+background-size: cover;
+opacity: 40%; */
+background-color: rgb(0, 0, 0,0.2);
+display: flex;
+justify-content: center;
+align-items: center;
+z-index: 1;
+position: absolute;
+}
+.menu ul li{
+    list-style: none;
+
+}
+.menu ul li a{
+  text-decoration: none;
+  font-family: "Arial";
+  font-size:1.4rem;
+  color:rgb(158, 29, 29);
+    
+}
+.menu{
+  display: none;
+}
+</style>
+<script>
+function myFunction() {
+    var x = document.getElementById("menu1");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+</head>
+<body>
+    <div class=menu id =menu1>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Home</a></li>
+        </ul>
+
+    </div>
+    <div class="icons">
+        <!-- <i class="fas fa-times"></i>  -->
+      <button  onclick="myFunction()" class=butt><i class="fas fa-bars"></i></button> 
+       </div>
+    <div class=maincontainer>
+    <div class=container1>
+       <h1 id=welc>Welcome</h1>
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit fjjgi ggio hfk.<br> 
+        Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+        <div class=link><a href="www.google.com">READ MORE</a></div>
+   </div>
+   <!-- <div class="icons">
+     <i class="fas fa-times"></i> 
+    <i class="fas fa-bars"></i>
+    </div> -->
+</div>
+</body>
+</html>

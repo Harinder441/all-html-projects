@@ -1,0 +1,85 @@
+/*forms START*/
+:root{
+    --fsize:200px;
+}
+.form .entry{
+margin:8px 0;
+width: inherit;
+font-size: 0.8rem;
+padding:4px;
+background-color:rgb(233, 227, 227);
+border:0;
+}
+.form .entry:focus{
+outline-color: blue;
+
+background-color:white;
+border:0;
+}
+.form textarea{
+    height:90px;
+}
+.form .btn{
+    width: inherit;
+    background-color: blue;
+    color:white;
+    font-weight:600;
+    padding:6px 103px;
+    margin-bottom: 15px;
+}
+.form h1{
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 0;
+}
+.items{
+    width: 100%;
+}
+.form{
+    max-width:250px;
+    height: 350PX;
+    padding:0 40px;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-top:0;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*forms END*/
+body{
+    background-color: tomato;
+    margin:0;
+    padding:0;
+}
+.body1{
+    height: 700px;
+    display: flex;
+    justify-content: center;
+   align-items: center;
+    position: relative;
+    margin:0;
+   z-index: 1;
+}
+.body1::before{
+    position: absolute;
+    content: "";
+    background-image: url("burger.jpg");
+    background-position: center center;
+       /* Add the blur effect */
+       filter: blur(10px);
+       -webkit-filter: blur(10px);
+       height: 100%;
+       width:100%;
+       z-index: -1;
+       
+}
+.sideimage{
+    width:250px;
+    overflow: hidden;
+    height: 350PX;
+    display: flex;
+    justify-content: center;
+}

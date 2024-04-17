@@ -1,0 +1,22 @@
+.columns img{
+width:100%;
+padding: 1%;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+.container .photo{
+    display: flex;
+    flex-direction:row;
+
+    justify-content: space-between;
+}
+.columns{
+    display: flex;
+    flex-direction:column;
+    width: 32.5%;
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="todoist.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Yaldevi:wght@200&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <section id="addtask">
+        <div class="align">
+       <div class="addtask container">
+           <h1 class="mainh">What to accomplis TODAY.</h1>
+           <div class="title">
+            <h1 class="head2">Title</h1>
+            <input class="textarea1" type="text" placeholder="enter here" >
+         
+            </div>
+            
+    <div class="discription">
+        <h1 class="head2">Discription</h1>
+            <textarea  class="textarea1" type="text" placeholder="enter here" row=3>
+    </textarea>
+            </div>
+    <div class="buttons">
+        <button class ="button1" onclick=addlist()>Add to List</button>
+        <button class ="button1">Clear List</button>
+    </div>
+        </div>
+    </div>
+    <div class="align2">
+        <div class="youritem container">
+            <h1>Your Items</h1>
+            <div class="taskli">
+            <table id="table" >
+                <thead>
+                <tr>
+                    <th scope="col">S No.</th>
+                    <th scope="col">Item title</th>
+                    <th scope="col">Item Discription</th>
+                    <th scope="col">Action</th>                  
+                </tr>
+            </thead>
+             <tbody id="tbbody">
+                 <tr>
+                    <td scope="row">1</td>
+                    <td >Monday Test</td>
+                    <td >ring theory exercise 1 and 2</td>
+                    <td> <button class="button1 button2">Delete</button></td>
+
+                 </tr>
+             </tbody>
+            </table>  
+            </div>
+        </div>
+    </div>
+    </section>
+    <script>
+        upadatekro()
+        function addlist(){
+            let x,y,z;
+             z=document.getElementsByClassName("textarea1");
+             x=z[0].value;
+            y=z[1].value;
+            if(localStorage.getItem("merilist")==null)
+            {
+               
+               merilist=[];
+               merilist.push([x,y]);
+               localStorage.setItem("merilist",JSON.stringify(merilist));
+            }
+            else{
+                let merilistka=JSON.parse(localStorage.getItem("merilist"));
+                merilistka.push([x,y])
+                localStorage.setItem("merilist",JSON.stringify(merilistka));
+            }
+            upadatekro();
+        }
+
+        let x,y,z;
+        function upadatekro(){
+        let puraArray=JSON.parse(localStorage.getItem("merilist"));
+        let leng=puraArray.length;
+        console.log(leng);
+        document.getElementById("tbbody").innerHTML="";
+        for(let i=0;i<leng;i++)
+        {
+            document.getElementById("tbbody").innerHTML += `
+            <tr><td scope=row>${i+1}</td>
+            <td >${puraArray[i][0]}</td>
+            <td >${puraArray[i][1]}</td>
+            <td> <button class="button1 button2" onclick="deletekro(${i})">Delete</button></td>
+            </tr> `;
+        }            
+        }
+        function deletekro(index){
+            let puraArray=JSON.parse(localStorage.getItem("merilist"));
+            puraArray.splice(index,1);
+            localStorage.setItem("merilist",JSON.stringify(puraArray));
+            upadatekro();
+        
+        }
+        
+        </script>
+</body>
+</html>
